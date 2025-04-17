@@ -20,7 +20,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <p className="mt-1 text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-bold text-indigo-600">
-            Rs{product.price}
+            Rs {product.price}
           </span>
           <Link
             to={`/products/${product.id}`}
