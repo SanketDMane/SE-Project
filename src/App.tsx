@@ -11,7 +11,7 @@ import { AdminInquiries } from './pages/AdminInquiries';
 import { AdminContacts } from './pages/AdminContacts';
 import { AboutUs } from './pages/AboutUs'; 
 import { Contact } from './pages/Contact';
-import { Gallery } from './pages/Gallery';
+// import { Gallery } from './pages/Gallery';
 
 function AppContent() {
   const location = useLocation();
@@ -31,7 +31,7 @@ function AppContent() {
         <Route path="/admin/contacts" element={<AdminContacts />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
+{/*         <Route path="/gallery" element={<Gallery />} /> */}
       </Routes>
 
       <Toaster position="bottom-right" />
