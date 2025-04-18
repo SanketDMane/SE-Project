@@ -15,7 +15,8 @@ export const AdminLogin = () => {
       toast.success('Login successful');
       navigate('/admin/dashboard');
     } else {
-      toast.error('Invalid credentials. Use admin@example.com / admin123');
+      // toast.error('Invalid credentials. Use admin@example.com / admin123');
+      toast.error('Invalid credentials.');
     }
   };
 
