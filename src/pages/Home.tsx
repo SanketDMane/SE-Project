@@ -131,7 +131,7 @@ export const Home = () => {
       {/* Hero Poster Section */}
       <div className="relative h-[80vh] w-full overflow-hidden">
         <motion.img
-          src="https://images.unsplash.com/photo-1606813902912-01580a206b9b" // 🖼️ Replace with your poster URL
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3LBPj_gJGnOItwgODBM8v94fJ1KTsyr55og&s" // 🖼️ Replace with your poster URL
           alt="Hero Poster"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
