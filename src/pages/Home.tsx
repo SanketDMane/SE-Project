@@ -126,23 +126,23 @@ export const Home = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-indigo-200 via-purple-100 to-pink-200 flex items-center justify-center overflow-hidden font-sans">
       
-      {/* Floating Animated Blobs */}
+      {/* Animated Background Blobs */}
       <div className="absolute w-[30rem] h-[30rem] bg-pink-400 rounded-full opacity-30 blur-3xl animate-spin-slow -top-40 -left-32 z-0"></div>
       <div className="absolute w-[30rem] h-[30rem] bg-indigo-400 rounded-full opacity-30 blur-3xl animate-spin-reverse -bottom-40 -right-32 z-0"></div>
 
-      {/* Glassmorphism Card */}
+      {/* Main Content Card */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 backdrop-blur-2xl bg-white/60 border border-white/20 shadow-2xl rounded-3xl px-10 py-16 max-w-3xl text-center"
+        className="relative z-10 backdrop-blur-2xl bg-white/60 border border-white/20 shadow-2xl rounded-3xl px-10 py-16 max-w-3xl w-full text-center"
       >
-        {/* Company Name with gradient text */}
+        {/* Company Name */}
         <motion.h2 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 mb-4 drop-shadow-lg"
+          className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 mb-6 drop-shadow-lg"
         >
           Rukmini Enterprises
         </motion.h2>
@@ -152,9 +152,9 @@ export const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-xl font-medium text-gray-800 mb-4"
+          className="text-lg sm:text-xl font-semibold text-gray-800 mb-4"
         >
-          Discover Our Premium Product Collection
+          Forging Strength Since 1997 – Trusted Electrodes, Trusted Performance
         </motion.p>
 
         {/* Description */}
@@ -162,12 +162,12 @@ export const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-md text-gray-600 leading-relaxed mb-10"
+          className="text-sm sm:text-md text-gray-600 leading-relaxed mb-10 px-4"
         >
-          Curated with precision, every product reflects excellence. Dive into a world of luxury and hand-picked quality just for you.
+          Delivering BIS-certified welding excellence – explore premium brands like <span className="font-semibold text-gray-700">Pilot, Marshal, Supersparc,</span> and <span className="font-semibold text-gray-700">Maharaja</span>, crafted for unmatched performance across India.
         </motion.p>
 
-        {/* Buttons */}
+        {/* Action Buttons */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -191,6 +191,8 @@ export const Home = () => {
     </div>
   );
 };
+
+     
 
 
 
