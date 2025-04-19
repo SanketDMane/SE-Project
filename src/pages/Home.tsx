@@ -134,7 +134,9 @@ export const Home = () => {
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 -z-20 bg-cover bg-center opacity-0"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1636348265968-7cebf59b03fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHNvbWUlMjBlbmdpbmVlcmluZyUyMGJyaWdodCUyMGxpZ2h0JTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D')` }}
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1636348265968-7cebf59b03fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHNvbWUlMjBlbmdpbmVlcmluZyUyMGJyaWdodCUyMGxpZ2h0JTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D')`,
+          }}
         ></div>
 
         {/* Top Background Effect */}
@@ -224,6 +226,7 @@ export const Home = () => {
     </div>
   );
 };
+
 
 
 
